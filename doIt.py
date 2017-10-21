@@ -4,13 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return \
-        render_template("index.html")
-
-
-@app.route("/container")
-def container():
-    return render_template("container.html")
+    return render_template("index.html")
 
 @app.route("/contact")
 def contact():
