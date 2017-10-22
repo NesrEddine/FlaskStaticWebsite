@@ -1,3 +1,7 @@
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,en,fr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+
 $(document).ready(function() {
     $('#idSignIn').bootstrapValidator({
         // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later

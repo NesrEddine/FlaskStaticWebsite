@@ -1,39 +1,5 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
-    <link rel="stylesheet" href="{{ url_for('static', filename='fonts/font-awesome.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles2.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/Pretty-Footer.css') }}">
-</head>
-
-<body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">News </a>
-                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-            </div> 
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="nav navbar-nav navbar-left">
-                    <li class="active" role="presentation"><a href="{{ url_for('index') }}">Home </a></li>
-                    <li role="presentation"><a href="#">Second Item</a></li>
-                    <li role="presentation"><a href="{{ url_for('contact') }}" target="_blank">Contact Us</a></li>
-                </ul>
-                
-                <ul class="nav navbar-nav navbar-right">
-                   <li role="presentation"><a href="{{ url_for('signin') }}">Sign In</a></li>
-                   <li role="presentation"><a href="{{ url_for('signup') }}" target="_blank">Sign Up</a></li>
-                   <li id="google_translate_element" style="padding-top:15px;"></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+{% extends "container.html" %}
+{%block page_content%}
     <div id="jump">
         <div class="carousel slide" data-ride="carousel" id="carousel-1">
             <div class="carousel-inner" role="listbox" id="slides">
@@ -108,15 +74,5 @@
             </div>
         </div>
     </footer>
-    <script src="{{ url_for('static', filename='js/jquery.min.js')}}"></script>
-    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
-   <script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,en,fr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-}
-</script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-</body>
-
-</html>
+{% endblock %}
