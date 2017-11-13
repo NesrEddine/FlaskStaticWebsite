@@ -23,7 +23,7 @@
  <li>Create text file named reqirements.txt , appengine_config.py and enter the informations. <h4 style:{color: red}><g>Note : Make intention you must add Flask==0.10.0 in requirements.txt to not get a problems</g></h4></li>
  <li>Open terminal and install a lib folder in the current project by typing pip install -t lib -r requirements.txt </li>
  <li>Run you application by typing in the terminal dev_appserver.py doIt.py or in eclipse right click at the project and select Debug As and click to PyDev: Google App Run</li>
- <li>Open the localhot:8080 url and you can see your application</li>
+ <li>Open the localhost:8080 url and you can see your application</li>
 </ol>
 
 <h3>Deployment your application</h3>
