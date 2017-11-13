@@ -20,11 +20,23 @@ $(document).ready(function() {
                         min: 6,       },
 						
 						notEmpty:{
-							message: 'Please enter your name'
+							message: 'Please enter your first name'
 							}
 				
 							} 
            		 },
+           		 
+           	  sname: {
+                  validators: {
+                          stringLength: {
+                          min: 6,       },
+  						
+  						notEmpty:{
+  							message: 'Please enter your second name'
+  							}
+  				
+  							} 
+             		 },
 			
             password: {
                 validators: {
